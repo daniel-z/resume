@@ -5,12 +5,30 @@
 @fa-font-path: "../fonts/font-awesome";
 
 .browsehappy {
-  margin: 0.2em 0; 
-  background: #ccc; 
-  color: #000; 
-  padding: 0.2em 0; 
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
 
-.jumbotron {
-  margin: 50px auto 0 auto;
+@beige: #F6F2E2;
+@brick: #F52900;
+@gray: #A0CED0;
+@strong-gray: #414042;
+@orange: #F52F04;
+@light-bg: #E5E5D7;
+@orange: #F62E07;
+
+body {
+    background: @beige;
+    text-align: center;
+
+    header {
+        h1 {
+            color: @strong-gray;
+        }
+        h2 {
+            color: @brick;
+        }
+    }
 }
