@@ -7300,14 +7300,28 @@ td.visible-print {
   color: #000;
   padding: 0.2em 0;
 }
+body,
+html {
+  font-size: 10px;
+}
 body {
   background: #f6f2e2;
-  text-align: center;
+}
+body header {
+  heigth: 300px;
+}
+body header > * {
+  margin: 0;
+}
+body header span {
+  font-size: 2em;
 }
 body header h1 {
   color: #414042;
+  font-size: 3.8em;
 }
 body header h2 {
   color: #f52900;
+  font-size: 1.8em;
 }
 /*# sourceMappingURL=/styles/main.css.map */

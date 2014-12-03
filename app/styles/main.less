@@ -18,17 +18,28 @@
 @orange: #F52F04;
 @light-bg: #E5E5D7;
 @orange: #F62E07;
+body, html {
+    font-size: 10px;
+}
 
 body {
     background: @beige;
-    text-align: center;
 
     header {
+        heigth: 300px;
+        & > * {
+            margin: 0;
+        }
+        span {
+            font-size: 2em;
+        }
         h1 {
             color: @strong-gray;
+            font-size: 3.8em;
         }
         h2 {
             color: @brick;
+            font-size: 1.8em;
         }
     }
 }
