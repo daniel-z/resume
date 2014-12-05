@@ -1,6 +1,10 @@
 @import "../bower_components/bootstrap/less/bootstrap.less";
 @icon-font-path: "../fonts/glyphicons/";
 
+// fonts
+@import url(http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,900);
+@TitleFont: "Cinzel Decorative";
+
 @import "../bower_components/font-awesome/less/font-awesome.less";
 @fa-font-path: "../fonts/font-awesome";
 
@@ -22,11 +26,18 @@ body, html {
     font-size: 10px;
 }
 
-body {
+h1, h2, h3, h4, h5, h6 {
+  font-family: @TitleFont;
+  font-weight: bold;
+}
+
+body[data-theme="default"] {
     background: @beige;
 
     header {
-        heigth: 300px;
+
+        height: 300px;
+        padding: 20px;
         & > * {
             margin: 0;
         }
@@ -35,11 +46,17 @@ body {
         }
         h1 {
             color: @strong-gray;
-            font-size: 3.8em;
+            font-size: 4.8em;
         }
         h2 {
             color: @brick;
             font-size: 1.8em;
         }
     }
+
+    & > section {}
+    section.me {}
+    section.experience {}
+    section.contact {}
+    section.skills {}
 }

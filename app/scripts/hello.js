@@ -1,8 +1,11 @@
 
 /* jshint white:false */
 
+
+/* global $ */
+
 (function() {
   'use strict';
-  console.log('\'Allo from CoffeeScript!');
+  $.backstretch("images/coffee-macbook-air.jpg");
 
 }).call(this);
